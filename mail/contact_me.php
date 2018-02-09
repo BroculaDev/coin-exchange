@@ -9,18 +9,18 @@ if(empty($_POST['name'])      ||
    echo "No arguments Provided!";
    return false;
    }
-   
+
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
-   
+
 // Create the email and send the message
-$to = 'working@teamweb.ro'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'contact@coin-exchange.ro'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Mail nou de pe site:  $name";
-$email_body = "Ai primit un mesaj de pe websitebox.ro.\n\n"."Astea sunt detaliile:\n\nNume: $name\n\nEmail: $email_address\n\nTelefon: $phone\n\nMesajul:\n$message";
-$headers = "From: office@websitebox.ro\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
+$email_body = "Ai primit un mesaj de pe coin-exchange.ro.\n\n"."Astea sunt detaliile:\n\nNume: $name\n\nEmail: $email_address\n\nTelefon: $phone\n\nMesajul:\n$message";
+$headers = "From: contact@coin-exchange.ro\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
-return true;         
+return true;
 ?>

@@ -1,0 +1,76 @@
+$primary-color: #2E3468;
+$primary-color-lighten:#3357EE;
+$seconday-color: #7680B5;
+$seconday-color-lighter: #CBD8F9;
+$tertiary-color: #B4962C;
+
+// Colors
+
+.navbar .menu ul li.active a {
+color: #fff;
+}
+.navbar .nav-menu .menu ul li a:before {
+
+    background: $seconday-color;
+}
+.navbar .menu ul li a:hover {
+    color: $tertiary-color;
+}
+
+.navbar.scroll{
+  background-color: $primary-color;
+}
+
+.btn-outline {
+    border: 2px solid $seconday-color;
+}
+.btn-outline:hover {
+    color: #fff;
+    background: $seconday-color;
+}
+
+.intro-heading-span {
+  color: $seconday-color-lighter!important;
+  text-shadow: 1px 1px 8px $seconday-color-lighter;
+}
+.colored-text {
+  color: $primary-color-lighten;
+}
+.btcwdgt-chart .btcwdgt-header {
+  background-color: $primary-color!important;
+}
+
+.platform-services .service-wrapper:last-child{
+  background-color: $primary-color;
+}
+.platform-services .service-wrapper:first-child{
+    background-color: $seconday-color;
+}
+.platform-services .service.right {
+    color: #fff;
+}
+.site-footer{
+background-color: $primary-color;
+}
+.platform-demo .video-holder .overlay .play-btn span{
+color: $seconday-color-lighter;
+}
+
+//images
+.hero-header.home {
+    background-image: url(../img/header-home2.jpg)!important;
+}
+.hero-header.bitcoin{
+  background-image: url(../img/header-bitcoin-2.jpg);
+}
+
+.hero-header.litecoin {
+    background-position:  center;
+  background-image: url("../img/header-litecoin-2.jpg"); }
+  .hero-header.litecoin img {
+ width: 10%;
+   }
+
+.page-header{
+  background-image: url(../img/page-header-2.jpg);
+}

@@ -1,22 +1,22 @@
 /*************************************
 *********** Table of Contents ********
 **************************************
-	
+
 	0.1 - General Styles
 	1.0 - Navigation
- 	2.0 - Hero Header 
+ 	2.0 - Hero Header
 	2.5 - Page Header
 	3.0 - Platform Statistics
-	4.0 - About 
-	5.0 - Feature 
-	6.0 - Services 
-	7.0 - CTA  
-	8.0 - Platform Demo 
-	9.0 - Video Modal  
-	10.0 - Site Footer  
-	11.0 - Media Queries 
+	4.0 - About
+	5.0 - Feature
+	6.0 - Services
+	7.0 - CTA
+	8.0 - Platform Demo
+	9.0 - Video Modal
+	10.0 - Site Footer
+	11.0 - Media Queries
 
-*************************************/ 
+*************************************/
 
 // Variables
 $base:		 #fab815;
@@ -39,7 +39,7 @@ $dark-92: lighten(#000, 92%);
 $dark-95: lighten(#000, 95%);
 $dark-100: lighten(#000, 100%); // White
 
-/* 	0.1 - General Styles */ 
+/* 	0.1 - General Styles */
 body {
 	color: $dark;
 	font-family: 'Montserrat', sans-serif;
@@ -112,7 +112,7 @@ button {
 	}
 }
 
-/* 1.0 - Navigation */ 
+/* 1.0 - Navigation */
 .navbar {
 	background: $dark;
 	margin: 0;
@@ -170,7 +170,7 @@ button {
 }
 
 /* 2.0 - Hero Header */
-.hero-header {	
+.hero-header {
 	background-repeat: none;
 	background-size: cover;
 	h1 {
@@ -213,7 +213,7 @@ button {
 			margin: 0 auto;
 		}
 	}
-} 
+}
 
 /* 2.5 - Page Header */
 .page-header {
@@ -228,7 +228,7 @@ button {
 		color: $white;
 		margin: 0;
 	}
-} 
+}
 
 /* 3.0 - Platform Statistics */
 .platform-statistic {
@@ -258,7 +258,7 @@ button {
 	}
 } 
 
-/* 4.0 - About */ 
+/* 4.0 - About */
 .about {
 	padding: 75px 0;
 	.about-text {
@@ -342,9 +342,9 @@ button {
 			color: $dark;
 		}
 	}
-} 
+}
 
-/* 7.0 - CTA */ 
+/* 7.0 - CTA */
 .cta {
 	padding: 80px 0 60px;
 	background-repeat: no-repeat;
@@ -360,7 +360,7 @@ button {
 		}
 	}
 }
- 
+
 .text-block-big {
 	padding: 60px 0 90px;
 	h2 {
@@ -407,17 +407,17 @@ button {
 			width: 100%;
 		}
 	}
-} 
+}
 
-/* 9.0 - Video Modal */ 
+/* 9.0 - Video Modal */
 .video-modal-wrapper {
-	display: none; 
+	display: none;
     position: fixed;
-    z-index: 99999; 
+    z-index: 99999;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
     padding-top: 100px;
@@ -456,7 +456,7 @@ button {
     }
 }
 
-/* 10.0 - Site Footer */ 
+/* 10.0 - Site Footer */
 .site-footer {
 	background: $dark;
 	padding: 45px 0;
@@ -507,10 +507,10 @@ button {
 }
 
 /* 11.0 - Media Queries */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 	.hero-header {
-		h1 { 
+		h1 {
 			font-size: 34px;
 			line-height: 44px;
 		}
@@ -522,9 +522,9 @@ button {
 			font-size: 34px;
 			line-height: 34px;
 		}
-	} 
+	}
 
-	/* About */ 
+	/* About */
 	.about {
 		.about-text {
 			h2 {
@@ -540,7 +540,7 @@ button {
 		min-width: 50%;
 		margin: 0;
 		&:nth-child(1),
-		&:nth-child(2) {	
+		&:nth-child(2) {
 			border-bottom: 1px solid darken( $dark-60, 2% );
 			padding-bottom: 30px;
 		}
@@ -566,7 +566,7 @@ button {
 				border-right: none;
 			}
 		}
-	} 
+	}
 
 	/* Footer */
 	.site-footer {
@@ -586,7 +586,7 @@ button {
 			margin-top: 0;
 			margin-left: 15px;
 		}
-	} 
+	}
 
 }
 
@@ -638,7 +638,7 @@ button {
 								left: 0;
 								width: 0%;
 								height: 4px;
-								background: $base; 
+								background: $base;
 							}
 							&:hover, {
 								&:before {
@@ -673,10 +673,10 @@ button {
 				}
 			}
 		}
-	} 
+	}
 
 	.hero-header {
-		h1 { 
+		h1 {
 			font-size: 54px;
 			line-height: 64px;
 		}
@@ -691,13 +691,13 @@ button {
 			}
 		}
 	}
-	
+
 	.page-header {
 		h1 {
 			font-size: 54px;
 			line-height: 54px;
 		}
-	} 
+	}
 
 	/* Platform Statistics */
 	.platform-statistic {
@@ -706,9 +706,9 @@ button {
 				border-right: 1px solid #2e3192;
 			}
 		}
-	} 
-	
-	/* Platform Services */ 
+	}
+
+	/* Platform Services */
 	.platform-services {
 		img.btc-icon {
 			display: block;
@@ -731,7 +731,7 @@ button {
 			}
 		}
 	}
-	
+
 	/*  Platform Demo */
 	.platform-demo {
 		.video-holder {
@@ -740,7 +740,7 @@ button {
 		}
 		.features {
 			margin: 25px 0 0;
-		} 
+		}
 	}
 
 	/* CTA */
@@ -748,7 +748,8 @@ button {
 		background-image: url('../img/big-logo.png');
 		p {
 			width: 60%;
-		} 
-	} 
+		}
+	}
 }
 
+@import "custom.scss";

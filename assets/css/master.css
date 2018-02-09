@@ -1,20 +1,20 @@
 /*************************************
 *********** Table of Contents ********
 **************************************
-	
+
 	0.1 - General Styles
 	1.0 - Navigation
- 	2.0 - Hero Header 
+ 	2.0 - Hero Header
 	2.5 - Page Header
 	3.0 - Platform Statistics
-	4.0 - About 
-	5.0 - Feature 
-	6.0 - Services 
-	7.0 - CTA  
-	8.0 - Platform Demo 
-	9.0 - Video Modal  
-	10.0 - Site Footer  
-	11.0 - Media Queries 
+	4.0 - About
+	5.0 - Feature
+	6.0 - Services
+	7.0 - CTA
+	8.0 - Platform Demo
+	9.0 - Video Modal
+	10.0 - Site Footer
+	11.0 - Media Queries
 
 *************************************/
 /* 	0.1 - General Styles */
@@ -26,6 +26,7 @@ a, a:hover, a:focus {
   text-decoration: none;
   outline: 0;
   background: none;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 p {
@@ -138,25 +139,29 @@ button {
     .hero-header h1 span {
       font-weight: 600; }
   .hero-header.home {
-    padding: 120px 0 40px;
+    padding: 280px 0 224px;
     background-position: right center;
     background-image: url("../img/header-home.jpg"); }
   .hero-header.bitcoin {
-    padding: 145px 0 40px;
+    padding: 444px 0 60px;
     background-position: center center;
     background-image: url("../img/header-bitcoin.jpg"); }
   .hero-header.etherum {
-    padding: 145px 0 40px;
+    padding: 270px 0 200px;
     background-position: right center;
     background-image: url("../img/header-etherum.jpg"); }
     .hero-header.etherum img {
       display: block;
       width: 80%;
       margin: 0 auto; }
-	.hero-header.litecoin {
-    padding: 145px 0 40px;
+  .hero-header.litecoin {
+    padding: 270px 0 200px;
     background-position: right center;
     background-image: url("../img/header-litecoin.jpg"); }
+    .hero-header.litecoin img {
+      display: block;
+      width: 80%;
+      margin: 0 auto; }
 
 /* 2.5 - Page Header */
 .page-header {
@@ -288,6 +293,7 @@ button {
     width: 100%;
     margin: 60px auto 0;
     position: relative;
+    -webkit-box-shadow: 0px 7px 51.33px 7.67px rgba(11, 11, 12, 0.35);
     box-shadow: 0px 7px 51.33px 7.67px rgba(11, 11, 12, 0.35); }
     .platform-demo .video-holder .overlay {
       position: absolute;
@@ -333,6 +339,7 @@ button {
     margin: 0 auto;
     background: #fff;
     padding: 35px 25px 25px;
+    -webkit-box-shadow: 0px 7px 51.33px 7.67px rgba(11, 11, 12, 0.35);
     box-shadow: 0px 7px 51.33px 7.67px rgba(11, 11, 12, 0.35); }
     .video-modal-wrapper .video-modal .close {
       position: absolute;
@@ -395,18 +402,15 @@ button {
   .hero-header h1 {
     font-size: 34px;
     line-height: 44px; }
-
   .page-header {
     padding: 179px 0 102px; }
     .page-header h1 {
       font-size: 34px;
       line-height: 34px; }
-
   /* About */
   .about .about-text h2 {
     font-size: 34px;
     line-height: 44px; }
-
   /* Features */
   .feature {
     float: left;
@@ -420,7 +424,6 @@ button {
     .feature:nth-child(3), .feature:nth-child(4) {
       border-bottom: 0;
       padding: 30px 0 0; }
-
   /* Platform Statistics */
   .platform-statistic .info {
     border-right: 1px solid #2e3192;
@@ -429,7 +432,6 @@ button {
     padding: 0; }
     .platform-statistic .info:last-child, .platform-statistic .info:nth-child(2) {
       border-right: none; }
-
   /* Footer */
   .site-footer .footer-menu ul {
     display: inline-block;
@@ -441,6 +443,7 @@ button {
   .site-footer .btn {
     margin-top: 0;
     margin-left: 15px; } }
+
 @media (min-width: 992px) {
   .navbar {
     background: none; }
@@ -501,7 +504,6 @@ button {
         padding: 10px 0; }
       .navbar.scroll .menu ul li a {
         padding: 22px 0; }
-
   .hero-header h1 {
     font-size: 54px;
     line-height: 64px; }
@@ -511,15 +513,12 @@ button {
     line-height: 34px; }
   .hero-header.etherum img {
     width: auto; }
-
   .page-header h1 {
     font-size: 54px;
     line-height: 54px; }
-
   /* Platform Statistics */
   .platform-statistic .info:nth-child(2) {
     border-right: 1px solid #2e3192; }
-
   /* Platform Services */
   .platform-services img.btc-icon {
     display: block;
@@ -537,32 +536,74 @@ button {
     .platform-services .service.right {
       float: left;
       padding-left: 105px; }
-
   /*  Platform Demo */
   .platform-demo .video-holder {
     width: 98%;
     margin: 0 auto; }
   .platform-demo .features {
     margin: 25px 0 0; }
-
   /* CTA */
   .cta {
     background-image: url("../img/big-logo.png"); }
     .cta p {
       width: 60%; } }
 
-/*# sourceMappingURL=master.css.map */
+.navbar .menu ul li.active a {
+  color: #fff; }
 
-.harta {
-	background-image: url(../img/map-image-crypto.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
+.navbar .nav-menu .menu ul li a:before {
+  background: #7680B5; }
 
-.centru {
-	text-align: center;
-}
+.navbar .menu ul li a:hover {
+  color: #B4962C; }
 
-textarea.form-control {
-  height: 130px;
-}
+.navbar.scroll {
+  background-color: #2E3468; }
+
+.btn-outline {
+  border: 2px solid #7680B5; }
+
+.btn-outline:hover {
+  color: #fff;
+  background: #7680B5; }
+
+.intro-heading-span {
+  color: #CBD8F9 !important;
+  text-shadow: 1px 1px 8px #CBD8F9; }
+
+.colored-text {
+  color: #3357EE; }
+
+.btcwdgt-chart .btcwdgt-header {
+  background-color: #2E3468 !important; }
+
+.platform-services .service-wrapper:last-child {
+  background-color: #2E3468; }
+
+.platform-services .service-wrapper:first-child {
+  background-color: #7680B5; }
+
+.platform-services .service.right {
+  color: #fff; }
+
+.site-footer {
+  background-color: #2E3468; }
+
+.platform-demo .video-holder .overlay .play-btn span {
+  color: #CBD8F9; }
+
+.hero-header.home {
+  background-image: url(../img/header-home2.jpg) !important; }
+
+.hero-header.bitcoin {
+  background-image: url(../img/header-bitcoin-2.jpg); }
+
+.hero-header.litecoin {
+  background-position: center;
+  background-image: url("../img/header-litecoin-2.jpg"); }
+
+.hero-header.litecoin img {
+  width: 10%; }
+
+.page-header {
+  background-image: url(../img/page-header-2.jpg); }
